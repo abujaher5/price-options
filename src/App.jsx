@@ -1,4 +1,6 @@
 import "./App.css";
+import BarChart from "./assets/Components/BarChart/BarChart";
+import LineChart from "./assets/Components/LineChart/LineChart";
 // import DaisyNav from "./assets/Components/DaisyNav/DaisyNav";
 import NavBar from "./assets/Components/NavBar/NavBar";
 // import PriceOption from "./assets/Components/PriceOption/PriceOption";
@@ -12,6 +14,9 @@ function App() {
       {/* <DaisyNav></DaisyNav> */}
 
       <PriceOptions></PriceOptions>
+      <LineChart></LineChart>
+
+      <BarChart></BarChart>
       {/* <PriceOption></PriceOption> */}
     </>
   );
