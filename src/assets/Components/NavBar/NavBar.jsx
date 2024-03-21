@@ -12,7 +12,7 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="bg-yellow-200">
+    <nav className="bg-yellow-400 p-6">
       <div className="md:hidden" onClick={() => setOpen(!open)}>
         {open === true ? (
           <RiCloseFill className="text-2xl"></RiCloseFill>
@@ -22,9 +22,9 @@ const NavBar = () => {
       </div>
 
       <ul
-        className={`md:flex absolute md:static shadow-lg  bg-yellow-400 rounded-2xl px-7 duration-1000
+        className={`md:flex justify-around absolute md:static shadow-lg md:shadow-none  bg-yellow-400 rounded-2xl px-7 duration-1000
      ${open ? "top-16" : "-top-60"} `}
-        //${open? "":"hidden"} ata o hote pare
+        //${open? "":"hidden"} can be used
       >
         {routes.map((route) => (
           <Link key={route.id} route={route}></Link>
